@@ -3,7 +3,7 @@ import User from "../models/userModel.js";
 import generateToken from "../utils/generateToken.js";
 
 //  @desc Auth user & get token
-//  @route POST/api/users/login
+//  @route POST /api/users/auth
 //  @access Public
 const authUser = asyncHandler(async (req, res) => {
   const { email, password } = req.body;
@@ -26,7 +26,7 @@ const authUser = asyncHandler(async (req, res) => {
 });
 
 //  @desc Register user
-//  @route POST/api/users
+//  @route POST /api/users
 //  @access Public
 const registerUser = asyncHandler(async (req, res) => {
   const { name, email, password } = req.body;
