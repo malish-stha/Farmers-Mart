@@ -34,8 +34,12 @@ const Header = () => {
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand>
-              <img src={logo} alt="FarMart" />
-              FarMart
+              <img
+                src={logo}
+                alt="FarMart"
+                // style={{ width: "auto", height: "100px" }}
+              />
+              Farmer's Mart
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
